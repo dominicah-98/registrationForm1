@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Viaoda+Libre&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+}
+.form-block{
+    position: relative;
+    padding: 0px 200px 0px 200px;
+    height: 95vh;
+    margin-top: 20px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #6C63FF;
+    border-radius: 20px;
+    height: 95vh;
+}
+.col{
+    position: relative;
+    float: left;
+    width: 50%;
+    margin: 10px;
+    height: 95vh;
+    padding: 20px 0px 30px 10px;
+}
+.col h2{
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 30px;
+    margin-top: -10px;
+}
+.col img{
+    position: absolute;
+    height: 110px;
+    top: 10px;
+    right: -35px;
+    filter: contrast(130%);
+    z-index: 10;
+}
+.form{
+    position: absolute;
+    width: 100%;
+}
+form{
+    position: absolute;
+    width: 100%;
+}
+input[type=text], [type=email], [type=tel], [type=date], [type=password], select{
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 14px;
+    padding: 10px 0px 10px 8px;
+    border-radius: 4px;
+    border: 3px solid #6C63FF;
+    outline: none;
+    transition: 0.3s;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+    font-size: 13px;
+}
+input[type=text]:focus, [type=email]:focus, [type=tel]:focus, [type=date]:focus, [type=password]:focus, select:focus{
+    border: 3px solid palevioletred;
+}
+label{
+    font-size: 15px;
+    font-weight: 600;
+}
+option{
+    background-color: whitesmoke;
+    font-size: 15px;
+}
+.gender-block, .hobbies-block{
+    position: relative;
+    float: left;
+    width: 50%;
+}
+.gender, .hobbies{
+    position: absolute;
+    display: inline-block;
+    left: 80px;
+    top: 0;
+}
+label[for=gender], [for=hobby]{
+    position: absolute;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 8px 0px 0px 8px;
+}
+input[type=radio], [type=checkbox]{
+    height: 20px;
+    width: 20px;
+}
+input[type=radio]:hover, [type=checkbox]:hover{
+    cursor: pointer;
+}
+input[type=submit]{
+    position: absolute;
+    left: 90px;
+    bottom: -135px;
+    padding: 8px 14px 8px 14px;
+    border-radius: 4px;
+    border: 3px solid #6C63FF;
+    background-color: #6C63FF;
+    font-family: 'Comfortaa', cursive;
+    font-size: 13px;
+    color: whitesmoke;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+input[type=submit]:hover, .facebook:hover{
+    background-color: #3f38c2;
+    border-color: #3f38c2;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+input[type=reset]{
+    position: absolute;
+    left: 0;
+    bottom: -135px;
+    padding: 8px 14px 8px 14px;
+    border-radius: 4px;
+    border: 3px solid palevioletred;
+    background-color: palevioletred;
+    font-family: 'Comfortaa', cursive;
+    font-size: 13px;
+    color: whitesmoke;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+input[type=reset]:hover, .google:hover{
+    background-color: rgb(180, 67, 105);
+    border-color: rgb(180, 67, 105);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.bg{
+    position: absolute;
+    background-color: rgba(108, 99, 255, 0.4);
+    width: 100%;
+    height: 100%;
+    margin-top: -20px;
+    border-radius: 0px 20px 20px 0px;
+    padding: 30px 20px 20px 20px;
+}
+
+.heading{
+    position: absolute;
+    text-align: center;
+    float: left;
+}
+.heading span{
+    display: block;
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 30px;
+    font-weight: 900;
+}
+.options{
+    position: absolute;
+    bottom: 120px;
+    right: 20px;
+    text-align: center;
+}
+.options-heading{
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 25px;
+    font-weight: 900; 
+}
+.button{
+    position: absolute;
+    left: 50px;
+}
+.google, .facebook{
+    display: block;
+    margin-top: 8px;
+    padding: 9px 15px 9px 15px;
+    background-color: #6C63FF;
+    border-radius: 4px;
+    color: whitesmoke;
+    transition: background-color 0.3s;
+}
+.google{
+    background-color: palevioletred;
+}
+
+.svg1{
+    position: absolute;
+    right: 220px;
+    top: 53px;
+    transform: scaleX(-1);
+}
+#right-hand{
+    animation: right-hand 1s infinite alternate linear;
+    transform-origin: right;
+    transition-delay: 2.2s;
+    transform-box: fill-box;
+}
+@keyframes right-hand{
+    from{
+        transform:rotateZ(-6deg);
+    }
+    to{
+        transform:rotateZ(3deg);
+    }
+}
+#left-hand{
+    animation: left-hand 1s infinite alternate linear;
+    transform-origin: top;
+    transition-delay: 2.2s;
+    transform-box: fill-box;
+}
+@keyframes left-hand{
+    from{
+        transform:rotateZ(0deg);
+    }
+    to{
+        transform:rotateZ(3deg);
+    }
+}
+#head{
+    animation: head 1s infinite alternate linear;
+    transform-origin: bottom;
+    transition-delay: 2.2s;
+    transform-box: fill-box;
+}
+@keyframes head{
+    from{
+        transform:rotateZ(-2deg);
+    }
+    to{
+        transform:rotateZ(3deg);
+    }
+}
+#book1{
+    animation: book 1.2s infinite alternate-reverse;
+    transform-origin: center;
+    transition-delay: 2.2s;
+    transform-box: fill-box;
+}
+#book2{
+    animation: book 1.2s infinite alternate-reverse;
+    transform-origin: center;
+    transition-delay: 2.2s;
+    transform-box: fill-box;
+}
+@keyframes book{
+    from{
+        transform:rotateZ(23deg);
+    }
+    to{
+        transform:rotateZ(0deg);
+    }
+}
+#plant1, #plant2{
+    animation: plant 1.2s infinite alternate linear;
+    transform-origin: bottom;
+    transition-delay: 2.2s;
+    transform-box: fill-box;
+}
+@keyframes plant{
+    from{
+        transform:rotateZ(-5deg);
+    }
+    to{
+        transform:rotateZ(3deg);
+    }
+}
+
+/* svg2 */
+.svg2{
+    position: absolute;
+    right: 390px;
+    bottom: 50px;
+}
+#Book_3{
+    animation: book3 1s infinite ease-out alternate;
+    transform-origin: center;
+    transition-delay: 1.5s;
+    transform-box: fill-box;
+}
+#Book_2{
+    animation: book2 1s infinite ease-in-out alternate;
+    transform-origin: center;
+    transition-delay: 2s;
+}
+#Book_1{
+    animation: book1 1s infinite ease-in-out alternate;
+    transform-origin: top;
+    transition-delay: 2.2s;
+    transform-box: fill-box;
+}
+@keyframes book1{
+    from{
+        transform:rotateX(0deg);
+    }
+    to{
+        transform:rotateX(20deg);
+    }
+}
+@keyframes book3{
+    from{
+        transform:rotateX(0deg);
+    }
+    to{
+        transform:rotateX(20deg);
+    }
+}
+@keyframes book2{
+    from{
+        transform:rotateX(0deg);
+    }
+    to{
+        transform:rotateX(20deg);
+    }
+}
+#stem{
+    animation: stem 1s infinite alternate linear;
+    transform-origin: bottom;
+    transition-delay: 2.2s;
+    transform-box: fill-box;
+}
+@keyframes stem{
+    from{
+        transform:rotateZ(0deg);
+    }
+    to{
+        transform:rotateZ(5deg);
+    }
+}
+#girl2{
+    animation: girl 1s infinite ease-in-out alternate;
+    transform-origin: top;
+    transition-delay: 2s;
+    transform-box: fill-box;
+}
+@keyframes girl{
+    from{
+        transform:rotateX(0deg);
+    }
+    to{
+        transform:rotateX(20deg);
+    }
+}
+#leaf6{
+    animation: leaf 3s infinite;
+    transform-origin: top;
+    transition-duration: 2s;
+    transition-delay: 2s;
+}
+#leaf5{
+    animation: leaf 3s infinite;
+    transform-origin: top;
+    transition-duration: 1.5s;
+}
+#leaf4{
+    animation: leaf 3s infinite;
+    transform-origin: top;
+    transition-duration: 2s;
+    transition-delay: 2s;
+}
+#leaf3{
+    animation: leaf 3s infinite;
+    transform-origin: top;
+    transition-duration: 1.5s;
+}
+#leaf2{
+    animation: leaf 3s infinite;
+    transform-origin: top;
+    transition-duration: 1.5s;
+    transition-delay: 2s;
+}
+#leaf1{
+    animation: leaf 3s infinite;
+    transform-origin: top;
+    transition-duration: 1.5s;
+}
+@keyframes leaf{
+    from{
+        transform:rotateX(-180deg);
+    }
+    to{
+        transform:rotateX(0deg);
+    }
+}
